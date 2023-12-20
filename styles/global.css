@@ -1,0 +1,35 @@
+:root {
+  --primary-color: #F9F9F9;
+  --secondary-color: #EDEDED;
+  --main-bg: #3d4657;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../assets/Inter-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Led-Dot';
+  src: url('../assets/LED-Dot-Matrix.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../assets/Poppins-Regular.ttf') format('truetype');
+}
+
+body {
+  background-color: var(--main-bg);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}

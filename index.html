@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/global.css">
+  <link rel="stylesheet" href="styles/home.css">
+
+  <title>Projeto 2 - proMOVE</title>
+</head>
+<body>
+  <div class="autocomplete" style="width:300px;"></div>
+    <input type="text" id="entry-name" name="entry-name" autocomplete="username">
+  </div>
+  <button onclick="readEntry()">Pesquisar Pokémon</button>
+
+  <div class="poke-entry">
+    <div class="poke-attributes">
+      <span id="poke-number-name"></span>
+      <!-- <span id="poke-biotype">Pokémon Rato</span> -->
+      <span id="poke-height"></span>
+      <span id="poke-weight"></span>
+    </div>
+    <img src="" width = 160 id="front-sprite"/>
+  </div>
+</body>
+
+<script src="scripts/service-worker.js"></script>
+<script src="scripts/serviceWorkerRegistration.js"></script>
+<script src="scripts/api.js"></script>
+</html>

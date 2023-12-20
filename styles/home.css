@@ -1,0 +1,12 @@
+.poke-entry {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.poke-attributes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
