@@ -23,7 +23,13 @@ const pokedexEntry = (pokeName) => {
         sprite: Math.random() < 1/256 ? result.sprites['front_shiny'] : result.sprites['front_default']
       }
 
-      document.querySelector('#front-sprite')['src'] = pokeEntry.sprite;
+      fetch(pokeEntry.sprite)
+        .then((response) => response.blob())
+        .then((myBlob) => {
+          const objectURL = URL.createObjectURL(myBlob);
+          document.querySelector('#front-sprite')['src'] = objectURL;
+        });
+      
       document.querySelector('#poke-number-name')['innerText'] = `N° ${pokeEntry.numero} ${pokeEntry.nome.toUpperCase()}`;
       document.querySelector('#poke-height')['innerText'] = `Altura ${pokeEntry.altura}m`;
       document.querySelector('#poke-weight')['innerText'] = `Peso ${pokeEntry.peso}kg`;
