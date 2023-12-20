@@ -1,7 +1,11 @@
 {
   "name": "Projeto 2",
   "short_name": "Projeto 2",
-  "start_url": "/",
+
+  "id": "./",
+  "scope": ".",
+  "start_url": "./",
+
   "icons": [
     {
       "src": "icons/manifest-icon-192.maskable.png",
@@ -28,8 +32,11 @@
       "purpose": "maskable"
     }
   ],
+
   "theme_color": "#FFFFFF",
   "background_color": "#3D4657",
-  "display": "fullscreen",
+  
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
   "orientation": "portrait"
 }
