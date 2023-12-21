@@ -10,3 +10,76 @@
   justify-content: center;
   align-items: flex-start;
 }
+
+h1 {
+  padding-top: 150px;
+  padding-bottom: 30px;
+  font-size: 72px;
+  text-align: center;
+  color: #ffcc00;
+  text-shadow: -2px -2px 0 #1565c0, 2px -2px 0 #1565c0, -2px 2px 0 #1565c0, 2px 2px 0 #1565c0;
+}
+
+input {
+  width: 250px;
+  padding: 5px;
+  font-size: 16px;
+  border: 2px solid #3498db;
+  border-radius: 5px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #ffcb05;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.7);
+}
+
+
+button {
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: 2px solid #ffcb05;
+  border-radius: 8px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px #000;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.poke-entry {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border: 2px solid #ffcb05;
+  border-radius: 10px;
+  width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffecb3;
+}
+
+.poke-attributes {
+  text-align: center;
+  margin-bottom: 10px;
+  gap: 5px;
+}
+
+#poke-number-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+#front-sprite {
+  margin-top: 10px;
+  border: 2px solid #ffcb05;
+  border-radius: 5px;
+}

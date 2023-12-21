@@ -13,19 +13,22 @@
   <title>Projeto 2 - proMOVE</title>
 </head>
 <body>
+  <h1>Pokédex</h1>
   <div class="autocomplete" style="width:300px;"></div>
     <input type="text" id="entry-name" name="entry-name" autocomplete="username">
   </div>
   <button onclick="readEntry()">Pesquisar Pokémon</button>
 
-  <div class="poke-entry">
-    <div class="poke-attributes">
-      <span id="poke-number-name"></span>
-      <!-- <span id="poke-biotype">Pokémon Rato</span> -->
-      <span id="poke-height"></span>
-      <span id="poke-weight"></span>
+  <div style="width: 200px; height: 284px;">
+    <div class="poke-entry">
+      <div class="poke-attributes">
+        <span id="poke-number-name"></span>
+        <!-- <span id="poke-biotype">Pokémon Rato</span> -->
+        <span id="poke-height"></span>
+        <span id="poke-weight"></span>
+      </div>
+      <img src="" width = 160 id="front-sprite"/>
     </div>
-    <img src="" width = 160 id="front-sprite"/>
   </div>
 
   <button id="install" hidden>Install</button>
